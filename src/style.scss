@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply grid h-screen place-items-center;
+}
+
+@layer components {
+  .logo-row {
+    @apply flex flex-row gap-3 ;
+    a {
+      @apply  relative ;
+      img {
+        @apply h-40 p-4 rounded-lg hover:scale-90 filter rotate-3 hover:rotate-0 drop-shadow-2xl hover:drop-shadow scale-100 transition duration-300 ease-in-out;
+      }
+      span {
+        @apply font-bold absolute -bottom-10 hidden left-[20%] opacity-0 text-center transition duration-300 ease-in-out;
+
+      }
+    }
+  }
+}
